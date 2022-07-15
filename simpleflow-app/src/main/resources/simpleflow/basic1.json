@@ -1,0 +1,55 @@
+{
+  "flowCode": "basic1",
+  "flowDefine": {
+    "start": {
+      "nodeList": [
+        {
+          "id": "startEvent",
+          "type": "event",
+          "code": "start",
+          "eventAction": "catch"
+        },
+        {
+          "id": "a",
+          "type": "node"
+        },
+        {
+          "id": "b",
+          "type": "node"
+        },
+        {
+          "id": "c",
+          "type": "node"
+        },
+        {
+          "id": "endEvent",
+          "type": "event",
+          "code": "end",
+          "eventAction": "throw"
+        }
+      ],
+      "lineList": [
+        {
+          "id": "1",
+          "fromId": "startEvent",
+          "toId": "a"
+        },
+        {
+          "id": "2",
+          "fromId": "a",
+          "toId": "b"
+        },
+        {
+          "id": "3",
+          "fromId": "b",
+          "toId": "c"
+        },
+        {
+          "id": "4",
+          "fromId": "c",
+          "toId": "endEvent"
+        }
+      ]
+    }
+  }
+}
